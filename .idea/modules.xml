@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Gestor MEI.iml" filepath="$PROJECT_DIR$/.idea/Gestor MEI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GestorMEI.iml" filepath="$PROJECT_DIR$/GestorMEI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
