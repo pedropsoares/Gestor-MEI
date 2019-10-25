@@ -6,7 +6,7 @@ import android.os.Parcelable;
 
 public class Cliente implements Parcelable {
 
-   // public int codigo;
+    public int codigo;
     public String nome;
     public String email;
     public String celular;
@@ -16,7 +16,7 @@ public class Cliente implements Parcelable {
 
     public Cliente(String nome, String email, String celular, String cep, String numero/*int codigo*/) {
 
-        //this.codigo = codigo;
+        this.codigo = codigo;
         this.nome = nome;
         this.email = email;
         this.celular = celular;
@@ -27,7 +27,7 @@ public class Cliente implements Parcelable {
     }
 
     protected Cliente(Parcel in) {
-     //   this.codigo =in.readInt();
+        this.codigo =in.readInt();
         this.nome = in.readString();
         this.email = in.readString();
         this.celular = in.readString();
@@ -61,7 +61,7 @@ public class Cliente implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
 
-       // dest.writeInt(codigo);
+        dest.writeInt(codigo);
         dest.writeString(nome);
         dest.writeString(email);
         dest.writeString(celular);
