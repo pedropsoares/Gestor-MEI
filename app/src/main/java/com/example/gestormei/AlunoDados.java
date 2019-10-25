@@ -1,8 +1,9 @@
-package com.example.gestormei;
+package com.example.melo.crud_sql_lite_prof_melo;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -24,16 +25,13 @@ public class AlunoDados extends SQLiteOpenHelper {
 
     public AlunoDados(Context context) {
         super(context, DATABASE_NAME , null, DATABASE_VERSION);
-
-
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
         db.execSQL(
                 "CREATE TABLE " + ALUNO_TABELA_NOME +
-                        "(" + ALUNO_COLUNA_MATRICULA + " INTEGER  PRIMARY KEY , " +
+                        "(" + ALUNO_COLUNA_MATRICULA + " INTEGER PRIMARY KEY, " +
                         ALUNO_COLUNA_NOME + " TEXT, " +
                         ALUNO_COLUNA_CPF + " TEXT, " +
                         ALUNO_COLUNA_RELEVANCIA + " FLOAT)"
