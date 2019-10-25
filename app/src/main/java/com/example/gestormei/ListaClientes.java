@@ -16,10 +16,20 @@ public class ListaClientes extends AppCompatActivity {
 
     InserirClientes inserirClientes;
     private ListView listView;
-    private  ClienteDados dao;
+    private ClienteDados dao;
     private List<Cliente> clientes;
-    private  List<Cliente> clientesFiltrados = new ArrayList<>();
-    private Button button;
+    private List<Cliente> clientesFiltrados = new ArrayList<>();
+    private Button buttonCadastrar, btnListarClientes;
+
+    private void listarClientes(){
+        dao = new ClienteDados(ListaClientes.this);
+        clientes = dao.select();
+        clientesFiltrados.addAll(clientes);
+        ArrayAdapter<Cliente> adapter = new ArrayAdapter<Cliente>(this, android.R.layout.simple_list_item_1, clientes);
+        listView.setAdapter(adapter);
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,23 +37,34 @@ public class ListaClientes extends AppCompatActivity {
 
 
         listView = findViewById(R.id.listarClientes);
-        dao = new ClienteDados(this);
-        clientes = dao.ObterTodos();
-        clientesFiltrados.addAll(clientes);
-        ArrayAdapter<Cliente> adapter = new ArrayAdapter<Cliente>(this, android.R.layout.simple_list_item_1, clientes);
-        listView.setAdapter(adapter);
 
 
-        button = (Button) findViewById(R.id.btnCadastrar);
-        button.setOnClickListener(new View.OnClickListener() {
+
+        buttonCadastrar = (Button) findViewById(R.id.btnCadastrar);
+        btnListarClientes = (Button) findViewById(R.id.btnPesquisar);
+
+
+        buttonCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ListaClientes.this, InserirClientes.class);
                 startActivity(intent);
 
 
-
             }
         });
+        btnListarClientes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listarClientes();
+            }
+        });
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        this.listarClientes();
     }
 }

@@ -1,6 +1,7 @@
 package com.example.gestormei;
 
 import android.content.Context;
+import android.util.Log;
 
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
@@ -8,7 +9,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.junit.Assert.*;
+import java.util.List;
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -19,9 +20,22 @@ import static org.junit.Assert.*;
 public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() {
-        // Context of the app under test.
-        Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
+        try {
+            Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
+            Cliente cli = new Cliente();
+            cli.codigo = 1;
+            cli.nome = "Melo";
+            cli.numero = "1";
+            cli.celular = "111111";
+            cli.email = "eu@eu";
+            cli.cep = "34656";
+            ClienteDados dados = new ClienteDados(appContext);
+            dados.insert(cli);
 
-        assertEquals("com.example.gestormei", appContext.getPackageName());
+            List<Cliente> clientes = dados.select();
+            Log.d("","Cadastrou");
+        }catch(Exception ex){
+            Log.d("",ex.getMessage());
+        }
     }
 }

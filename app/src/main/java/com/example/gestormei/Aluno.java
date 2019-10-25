@@ -1,4 +1,4 @@
-package com.example.melo.crud_sql_lite_prof_melo;
+package com.example.gestormei;
 
 import android.os.Parcel;
 import android.os.Parcelable;
