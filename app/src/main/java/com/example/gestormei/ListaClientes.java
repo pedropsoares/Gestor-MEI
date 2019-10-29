@@ -19,13 +19,12 @@ public class ListaClientes extends AppCompatActivity {
     // InserirClientes inserirClientes;
 
     private ListView listView;
-    private ClienteListAdapter01 adapter01;
     private ClienteDados dao;
     private List<Cliente> mClienteList;
-    private Button buttonCadastrar, btnListarClientes;
     private List<Cliente> clientesFiltrados = new ArrayList<>();
 
-
+   // private ClienteListAdapter01 adapter01;
+    /*private Button buttonCadastrar, btnListarClientes;
     private void listarClientes() {
 
         listView = findViewById(R.id.listarClientes);
@@ -34,18 +33,24 @@ public class ListaClientes extends AppCompatActivity {
         dao = new ClienteDados(ListaClientes.this);
         mClienteList = dao.select();
         clientesFiltrados.addAll(mClienteList);
-        //(ListaClientes.this, android.R.layout.simple_list_item_1, mClienteList);
-        adapter01 = new ClienteListAdapter01(getApplicationContext(), mClienteList);
+        adapter01 = (ListaClientes.this, android.R.layout.simple_list_item_1, mClienteList);
+       //adapter01 = new ClienteListAdapter01(getApplicationContext(), mClienteList);
         listView.setAdapter(adapter01);
         //listView.setAdapter(adapter);
     }
-
+*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_clientes);
 
+        listView = findViewById(R.id.listarClientes);
+        dao = new ClienteDados(this);
+        mClienteList = dao.obterTodos();
+        clientesFiltrados.addAll(mClienteList);
+        ArrayAdapter<Aluno> adaptador = new ArrayAdapter<Aluno>(this, android.R.layout.simple_list_item_1, clientesFiltrados);
+        listView.setAdapter(adaptador);
 
         buttonCadastrar = (Button) findViewById(R.id.btnCadastrar);
         // btnListarClientes = (Button) findViewById(R.id.btnPesquisar);
@@ -60,12 +65,12 @@ public class ListaClientes extends AppCompatActivity {
 
             }
         });
-      /*  btnListarClientes.setOnClickListener(new View.OnClickListener() {
+        btnListarClientes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 listarClientes();
             }
-        });*/
+        });
 
     }
 
@@ -73,5 +78,6 @@ public class ListaClientes extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         listarClientes();
+
     }
-}
+}*/
