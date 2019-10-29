@@ -32,7 +32,7 @@ public class ExampleInstrumentedTest {
             ClienteDados dados = new ClienteDados(appContext);
             dados.insert(cli);
 
-            List<Cliente> clientes = dados.select();
+           // List<Cliente> clientes = dados.select();
             Log.d("","Cadastrou");
         }catch(Exception ex){
             Log.d("",ex.getMessage());

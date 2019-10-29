@@ -13,6 +13,61 @@ public class Cliente implements Parcelable {
     public String cep;
     public String numero;
 
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setCelular(String celular) {
+        this.celular = celular;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getCelular() {
+        return celular;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public static Creator<Cliente> getCREATOR() {
+        return CREATOR;
+    }
+
+
+
 
     public Cliente(String nome, String email, String celular, String cep, String numero/*int codigo*/) {
 
