@@ -10,19 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d6216ec-f95d-4b0f-9797-d76cf7292bb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/Conexao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search_black_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_contexto.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_principal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/gestormei/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/gestormei/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/Aluno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/AlunoDados.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ClienteDados.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ClienteDados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/InserirClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/InserirClientes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ListaClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ListaClientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lista_clientes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_lista_clientes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_inserir_clientes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_inserir_clientes.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +25,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Galaxy_Nexus_API_22" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="420059bae4386411" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -44,51 +36,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lista_clientes.xml">
-          <provider selected="true" editor-type-id="android-designer2" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ListaClientes.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_inserir_clientes.xml">
+          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="method#onCreate#0;class#ListaClientes#0" />
-                <element signature="method#onCreateOptionsMenu#0;class#ListaClientes#0" />
-                <element signature="method#onCreateContextMenu#0;class#ListaClientes#0" />
-                <element signature="method#procurarCliente#0;class#ListaClientes#0" />
-                <element signature="method#excluir#0;class#ListaClientes#0" />
-                <element signature="e#3133#3562#0" expanded="true" />
-                <element signature="e#3561#3562#0" expanded="true" />
-                <element signature="method#atualizar#0;class#ListaClientes#0" />
-                <element signature="method#cadastrar01#0;class#ListaClientes#0" />
-                <element signature="method#onResume#0;class#ListaClientes#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/InserirClientes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+            <state relative-caret-position="215">
+              <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_inserir_clientes.xml">
-          <provider editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/InserirClientes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1617">
-              <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+            <state relative-caret-position="805">
+              <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1561#3573#0" expanded="true" />
+                <element signature="e#3572#3573#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,23 +87,23 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ActivityCliente.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/DetalhesClientes.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detalhes_clientes.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_inserir_clientes.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/Dados.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/example/gestormei/ExampleUnitTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/Aluno.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/AlunoDados.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ClienteDadosOld.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/InserirClientes.java" />
         <option value="$PROJECT_DIR$/../ProjetosMobile/Gestor-MEI/app/src/main/res/layout/activity_lista_clientes.xml" />
         <option value="$PROJECT_DIR$/../ProjetosMobile/Gestor-MEI/app/src/main/java/com/example/gestormei/ClienteListAdapter01.java" />
         <option value="$PROJECT_DIR$/../ProjetosMobile/Gestor-MEI/app/src/main/java/com/example/gestormei/ListaClientes.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/Conexao.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/Cliente.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ClienteDados.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_principal.xml" />
+        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/example/gestormei/ExampleInstrumentedTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_lista_clientes.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ListaClientes.java" />
-        <option value="$PROJECT_DIR$/app/src/androidTest/java/com/example/gestormei/ExampleInstrumentedTest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/Cliente.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/gestormei/InserirClientes.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_inserir_clientes.xml" />
       </list>
     </option>
   </component>
@@ -154,10 +120,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -165,7 +131,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-10-17T02:38:34.104Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/ExemploCRUD - Copia" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -441,9 +407,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.52276295" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.33281004" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -455,10 +422,10 @@
       <window_info anchor="bottom" id="Logcat" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32724252" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.33388704" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3255814" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3207856" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
@@ -596,9 +563,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/Aluno.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/Aluno.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/database/sqlite/SQLiteOpenHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -607,13 +572,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ClienteDadosOld.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/AlunoDados.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/AlunoDados.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/widget/BaseAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -668,68 +627,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detalhes_clientes.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_search_black_24dp.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/DetalhesClientes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ClienteDados.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#excluir#0;class#ClienteDados#0" />
-            <element signature="method#atualizar#0;class#ClienteDados#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_principal.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/example/gestormei/ExampleInstrumentedTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -751,22 +650,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ListaClientes.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/DetalhesClientes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="method#onCreate#0;class#ListaClientes#0" />
-            <element signature="method#onCreateOptionsMenu#0;class#ListaClientes#0" />
-            <element signature="method#onCreateContextMenu#0;class#ListaClientes#0" />
-            <element signature="method#procurarCliente#0;class#ListaClientes#0" />
-            <element signature="method#excluir#0;class#ListaClientes#0" />
-            <element signature="e#3133#3562#0" expanded="true" />
-            <element signature="e#3561#3562#0" expanded="true" />
-            <element signature="method#atualizar#0;class#ListaClientes#0" />
-            <element signature="method#cadastrar01#0;class#ListaClientes#0" />
-            <element signature="method#onResume#0;class#ListaClientes#0" />
-          </folding>
+        <state relative-caret-position="274">
+          <caret line="22" column="59" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -778,18 +680,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/InserirClientes.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        <state relative-caret-position="680">
+          <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detalhes_clientes.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_contexto.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ListaClientes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="120" column="46" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreateOptionsMenu#0;class#ListaClientes#0" />
+            <element signature="method#onCreateContextMenu#0;class#ListaClientes#0" />
+            <element signature="method#procurarCliente#0;class#ListaClientes#0" />
+            <element signature="method#excluir#0;class#ListaClientes#0" />
+            <element signature="method#atualizar#0;class#ListaClientes#0" />
+            <element signature="method#onResume#0;class#ListaClientes#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/ClienteDados.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#excluir#0;class#ClienteDados#0" />
+            <element signature="method#atualizar#0;class#ClienteDados#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_principal.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_inserir_clientes.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1617">
-          <caret line="102" column="7" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
+        <state relative-caret-position="215">
+          <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/gestormei/InserirClientes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="805">
+          <caret line="88" column="12" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1561#3573#0" expanded="true" />
+            <element signature="e#3572#3573#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -62,12 +62,6 @@ public class Cliente implements Parcelable {
         return numero;
     }
 
-    public static Creator<Cliente> getCREATOR() {
-        return CREATOR;
-    }
-
-
-
 
     public Cliente(String nome, String email, String celular, String cep, String numero/*int codigo*/) {
 
@@ -126,10 +120,10 @@ public class Cliente implements Parcelable {
 
     }
 
-   /* @Override
+    @Override
     public String toString(){
         return nome;
-    }*/
+    }
 }
 
 

@@ -111,7 +111,7 @@ public class ListaClientes extends AppCompatActivity {
                 (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
 
         final Cliente clienteAtualizar = clientesFiltrados.get(menuInfo.position);
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, InserirClientes.class);
         intent.putExtra("cliente", clienteAtualizar);
         startActivity(intent);
 //        Toast.makeText(getApplicationContext(), "*ATUALIZAR* está em desenvolvimento. Favor aguardar.",Toast.LENGTH_LONG).show();
