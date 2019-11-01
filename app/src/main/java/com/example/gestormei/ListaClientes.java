@@ -148,7 +148,13 @@ public class ListaClientes extends AppCompatActivity {
 
     public void detalhes(MenuItem item) {
 
-        /*não está funcionando - o código está comentado no final desta página*/
+        AdapterView.AdapterContextMenuInfo menuInfo =
+                (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+
+        final Cliente clienteAtualizar = clientesFiltrados.get(menuInfo.position);
+        Intent intent = new Intent(this, DetalhesClientes.class);
+        intent.putExtra("informacoes", clienteAtualizar);
+        startActivity(intent);
 
 
     }
