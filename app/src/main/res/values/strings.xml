@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">GestorMEI</string>
+    <string name="app_name">GestorMEI-Master</string>
+    <string name="servico">Serviço</string>
+    <string name="fechar_o_dia">Fechar o Dia</string>
+    <string name="cliente">Cliente</string>
+    <string name="e_mail">E-mail</string>
+    <string name="cep">CEP:</string>
+    <string name="n_da_residencia">Nº da residência</string>
+    <string name="contato_do_cliente">Contato do Cliente:</string>
+    <string name="e_mail_do_cliente">E-mail do Cliente:</string>
+    <string name="enviar_dados">SALVAR</string>
+    <string name="nome_do_cliente">Nome do Cliente:</string>
+    <string name="_81_99999_9999">(81)99999-9999</string>
+    <string name="nome">Nome</string>
+    <string name="n">Nº</string>
 </resources>

@@ -25,3 +25,6 @@ public class Conexao extends SQLiteOpenHelper { /*SQLitOpenHelpr auxilia abrir o
 
     }
 }
+
+//**************************************
+

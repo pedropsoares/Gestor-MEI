@@ -55,6 +55,6 @@ public class ClienteDados {
         values.put("celular", cli.getCelular());
         values.put("cep", cli.getCep());
         values.put("numero", cli.getNumero());
-        banco.update("cli", values, "codigo = ?", new String[]{String.valueOf(cli.getCodigo())});
+        banco.update("cliente", values, "codigo = ?", new String[]{String.valueOf(cli.getCodigo())});
     }
 }

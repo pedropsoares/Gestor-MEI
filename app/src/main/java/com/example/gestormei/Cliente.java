@@ -5,7 +5,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Cliente implements Parcelable {
-
+    public String codFireBase;
     public int codigo;
     public String nome;
     public String email;
@@ -71,11 +71,11 @@ public class Cliente implements Parcelable {
         this.celular = celular;
         this.cep = cep;
         this.numero = numero;
-
-
     }
 
     protected Cliente(Parcel in) {
+
+        this.codFireBase = in.readString();
         this.codigo =in.readInt();
         this.nome = in.readString();
         this.email = in.readString();
@@ -110,14 +110,13 @@ public class Cliente implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
 
+        dest.writeString(codFireBase);
         dest.writeInt(codigo);
         dest.writeString(nome);
         dest.writeString(email);
         dest.writeString(celular);
         dest.writeString(cep);
         dest.writeString(numero);
-
-
     }
 
     @Override

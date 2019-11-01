@@ -7,72 +7,196 @@
     android:orientation="vertical"
     tools:context=".DetalhesClientes">
 
-<!--
-    <EditText
-        android:id="@+id/editTextcodigo2"
+    <TextView
+        android:id="@+id/textViewNome2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="codigo"/-->
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/nome"
+        android:ems="15"
+        android:textSize="20sp"/>
 
-    <EditText
-        android:id="@+id/editTextNome2"
+    <TextView
+        android:id="@+id/textViewEmail2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Nome"/>
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/e_mail"
+        android:ems="15"
+        android:textSize="20sp"/>
 
-    <EditText
-        android:id="@+id/editTextEmail2"
+    <TextView
+        android:id="@+id/textViewCelular2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="E-mail"/>
+        android:ems="15"
+        android:textSize="20sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/contato_do_cliente"/>
 
-    <EditText
-        android:id="@+id/editTextcelular2"
+    <TextView
+        android:id="@+id/textViewCep2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="(81)99999-9999"/>
+        android:ems="15"
+        android:textSize="20sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/cep"/>
 
-    <EditText
-        android:id="@+id/editTextCep2"
+    <TextView
+        android:id="@+id/textViewN2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="CEP"/>
+        android:ems="15"
+        android:textSize="20sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/n"/>
 
-    <EditText
-        android:id="@+id/editTextNumero2"
+
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Nº da residencia"/>
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        tools:srcCompat="@tools:sample/avatars"
+        app:layout_constraintTop_toBottomOf="@+id/textViewN2" />
 
     <Button
         android:id="@+id/btnEditar"
-        android:layout_width="match_parent"
+        android:layout_width="216dp"
         android:layout_height="wrap_content"
-        android:text="Editar" />
-
-    <Button
-        android:id="@+id/btnExcluir"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Excluir" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Editar"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/btnMaps"
-        android:layout_width="match_parent"
+        android:layout_width="216dp"
         android:layout_height="wrap_content"
-        android:text="MAPS" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="MAPS"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/btnVenda"
-        android:layout_width="match_parent"
+        android:layout_width="216dp"
         android:layout_height="wrap_content"
-        android:text="Venda" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Venda"
+        android:textSize="24sp" />
 
 
 </LinearLayout>
+
+
+
+<!--
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetalhesClientes">
+
+    <TextView
+        android:id="@+id/textViewNome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/nome"
+        android:ems="15"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewEmail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/e_mail"
+        android:ems="15"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textViewCelular2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:textSize="20sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/contato_do_cliente"/>
+
+    <TextView
+        android:id="@+id/textViewCep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:textSize="20sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/cep"/>
+
+    <TextView
+        android:id="@+id/textViewN2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:textSize="20sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/n"/>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Editar"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnMaps"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="MAPS"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnVenda"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Venda"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</LinearLayout>
+
+
+-->

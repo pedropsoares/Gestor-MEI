@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "561894976179",
+    "firebase_url": "https://gestor-mei.firebaseio.com",
+    "project_id": "gestor-mei",
+    "storage_bucket": "gestor-mei.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561894976179:android:0e3a3a0b22e91f476edec6",
+        "android_client_info": {
+          "package_name": "com.example.gestormei"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561894976179-32j5306guodnqarrlos3spun2ja009ab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gestormei",
+            "certificate_hash": "568fa2357dbc4ccf4ee8d6433b0ab33aed4d45dc"
+          }
+        },
+        {
+          "client_id": "561894976179-lfbaqj0pagrvp2ab06jshlu7nod3madf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9quVMHK8s9ilhCyp5FlQ-R52bJ46vYA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561894976179-lfbaqj0pagrvp2ab06jshlu7nod3madf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

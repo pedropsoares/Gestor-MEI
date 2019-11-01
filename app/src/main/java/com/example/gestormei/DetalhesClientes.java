@@ -13,11 +13,11 @@ public class DetalhesClientes extends AppCompatActivity {
         setContentView(R.layout.activity_detalhes_clientes);
 
         //TextView editCodigo = findViewById(R.id.editTextcodigo2);
-        TextView editNome = findViewById(R.id.editTextNome2);
-        TextView editEmail = findViewById(R.id.editTextEmail2);
-        TextView editCelular = findViewById(R.id.editTextcelular2);
-        TextView editCep = findViewById(R.id.editTextCep2);
-        TextView editNumero = findViewById(R.id.editTextNumero2);
+        TextView editNome = findViewById(R.id.textViewNome2);
+        TextView editEmail = findViewById(R.id.textViewEmail2);
+        TextView editCelular = findViewById(R.id.textViewCelular2);
+        TextView editCep = findViewById(R.id.textViewCep2);
+        TextView editNumero = findViewById(R.id.textViewN2);
 
 
         Cliente cli = getIntent().getExtras().getParcelable("informacoes");
@@ -35,8 +35,5 @@ public class DetalhesClientes extends AppCompatActivity {
         editCelular.setText(celular);
         editCep.setText(cep);
         editNumero.setText(numero);
-
-
     }
-
 }

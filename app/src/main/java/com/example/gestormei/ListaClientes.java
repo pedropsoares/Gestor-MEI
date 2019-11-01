@@ -13,9 +13,17 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
+//import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.Toast;
+
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,16 +40,37 @@ public class ListaClientes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_clientes);
 
-
         listView = findViewById(R.id.listarClientes);
         dao = new ClienteDados(this);
         clientes = dao.obterTodos();
         clientesFiltrados.addAll(clientes);
         ArrayAdapter<Cliente> adaptador = new ArrayAdapter<Cliente>(this, android.R.layout.simple_list_item_1, clientesFiltrados);
         listView.setAdapter(adaptador);
-
-
         registerForContextMenu(listView);
+
+        FirebaseApp.initializeApp(ListaClientes.this);
+        FirebaseDatabase bd = FirebaseDatabase.getInstance();
+        DatabaseReference bdRef = bd.getReference();
+        FirebaseDatabase.getInstance().getReference("cliente").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    clientesFiltrados = new ArrayList<>();
+                    //listView.setAdapter(null);
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        Cliente cli = snapshot.getValue(Cliente.class);
+                        cli.codFireBase = snapshot.getKey();//Código Firebase
+                        clientesFiltrados.add(cli);
+                    }
+                    ArrayAdapter<Cliente> adaptador = new ArrayAdapter<Cliente>(ListaClientes.this, android.R.layout.simple_list_item_1, clientesFiltrados);
+                    listView.setAdapter(adaptador);
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+            }
+        });
 
     }
 
@@ -72,7 +101,7 @@ public class ListaClientes extends AppCompatActivity {
         i.inflate(R.menu.menu_contexto, menu);
     }
 
-    public void procurarCliente(String nome) {//FILTA POR LETRA DIGITADA
+    public void procurarCliente(String nome) {//FILTRA POR LETRA DIGITADA
         clientesFiltrados.clear();
         for (Cliente cli : clientes) {
             if (cli.getNome().toLowerCase().contains(nome.toLowerCase())) {//TODOS EM MINÚSCULO
@@ -97,7 +126,7 @@ public class ListaClientes extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
-                        clientesFiltrados.remove(clienteExcluir);
+                        //  clientesFiltrados.remove(clienteExcluir);
                         clientesFiltrados.remove(clienteExcluir);
                         dao.excluir(clienteExcluir);
                         listView.invalidateViews();
@@ -117,6 +146,13 @@ public class ListaClientes extends AppCompatActivity {
 //        Toast.makeText(getApplicationContext(), "*ATUALIZAR* está em desenvolvimento. Favor aguardar.",Toast.LENGTH_LONG).show();
     }
 
+    public void detalhes(MenuItem item) {
+
+        /*não está funcionando - o código está comentado no final desta página*/
+
+
+    }
+
     public void cadastrar01(MenuItem item) {
         Intent intent = new Intent(this, InserirClientes.class);
         startActivity(intent);
@@ -130,7 +166,20 @@ public class ListaClientes extends AppCompatActivity {
         clientesFiltrados.addAll(clientes);
         listView.invalidateViews();
     }
-
 }
 
 
+/*
+public void detalhes(MenuItem item){
+
+        AdapterView.AdapterContextMenuInfo menuInfo =
+                (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        final Cliente clienteAt = clientesFiltrados.get(menuInfo.position);
+        Intent intent = new Intent(this, DetalhesClientes.class);
+        intent.putExtra("cliente", clienteAt);
+        startActivity(intent);
+
+        /* Intent intent = new Intent(ListaClientes.this, DetalhesClientes.class);
+        startActivity(intent); */
+//  }
+//*/
